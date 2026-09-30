@@ -1,0 +1,197 @@
+{
+  "id": "baleborne-main-module",
+  "title": "Baleborne Main Module",
+  "version": "1.0.1",
+  
+  "manifest":"https://github.com/Cathleanna-star/Baleborne-Main-Module/releases/latest/download/baleborne-main-module.json",
+  "download":"https://github.com/Cathleanna-star/Baleborne-Main-Module/releases/download/1.0.1/baleborne-main-module.zip",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+
+  "authors": [
+    {
+      "name": "Cathleanna",
+      "discord": "Cathleanna",
+      "flags": {}
+    }
+  ],
+
+  "flags": {
+    "canUpload": true,
+
+    "baleborne-main-module": {
+      "pf2e-homebrew": {
+
+        "skills": {
+          "additional": {
+
+            "ultraviolence": {
+              "label": "Ultraviolence",
+              "attribute": "str"
+            },
+
+            "eroticism": {
+              "label": "Eroticism",
+              "attribute": "cha"
+            }
+          }
+        },
+
+		"languages": {
+			"haka":"Haka",
+			"miumi":"Miumi",
+			"morumi":"Morumi",
+			"atami":"Atami",
+			"ahiku":"Ahiku",
+			"katku":"Katku",
+			"ueku":"Ueku",
+			"aeiyo":"Aeiyo",
+			"oniyo":"Oniyo",
+			"kuto-koto":"Kuto-Koto",
+			"kokoame":"Kokoame",
+			"tamame":"Tamame",
+			"inadan":"Inadan",
+			"yatash":"Yatash"
+		},
+		
+        "creatureTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt",
+		  "dogma":"Dogma",
+		  "oni":"Oni"
+        },
+
+        "featTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt",
+		  "dogma":"Dogma",
+		  "oni":"Oni",
+		  "decadence":"Decadence",
+		  "distortion":"Distortion",
+		  "temerpance":"Temperance",
+		  "vow":"Vow"
+        },
+
+        "spellTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt",
+		  "dogma":"Dogma"
+        },
+
+        "weaponTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt",
+		  "oni":"Oni"
+        },
+
+        "equipmentTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt"
+        },
+
+        "shieldTraits": {
+          "corrupt": "Corrupt",
+          "pure": "Pure",
+          "betwixt": "Betwixt"
+        },
+
+        "damageTypes": {
+          "corruption": {
+            "label": "Corruption",
+            "category": "energy",
+            "icon": "fa-baleborne-corruption"
+          },
+		  
+          "purity": {
+            "label": "Purity",
+            "category": "energy",
+            "icon": "fa-baleborne-purity"
+          }
+        }
+      }
+    }
+  },
+  "esmodules": [
+  "scripts/conviction.js",
+  "scripts/presage.js",
+  "scripts/hunger.js",
+  "scripts/dogma.js",
+  "scripts/dogma-feat-categories.js",
+  "scripts/dogma-feats-section.js",
+  "scripts/dogma-proficiency.js",
+  "scripts/npc-dogma.js",
+  "scripts/dogma-meter.js",
+  "scripts/dogma-rest.js",
+  "scripts/dogma-damage.js",
+  "scripts/ruined.js",
+  "scripts/language-rarities.js",
+  "scripts/invigorated.js",
+  "scripts/vows.js",
+  "scripts/grant-effect.js"
+],
+
+  "styles": [
+    "styles/baleborne.css"
+  ],
+
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+
+  "url": "https://fgen.lffg.org/module/manifest/eyJuYW1lIjoiYmFsZWJvcm5lLW1haW4tbW9kdWxlIiwidGl0bGUiOiJCYWxlYm9ybmUgTWFpbiBNb2R1bGUiLCJhdXRob3IiOiJDYXRobGVhbm5hIiwiZGVzY3JpcHRpb24iOiIiLCJzeXN0ZW0iOiJwZjJlIiwicGFja3MiOlt7Im5hbWUiOiJiYWxlYm9ybmUtbWFpbi1tb2R1bGUiLCJsYWJlbCI6IkJhbGVib3JuZSBNYWluIE1vZHVsZSIsInR5cGUiOiJJdGVtIn1dfQ==/manifest.json",
+
+  "packs": [
+    {
+      "name": "baleborne-main-module-pack",
+      "label": "Baleborne Main Module Pack",
+      "path": "packs/baleborne-main-module-pack",
+      "type": "Item",
+      "system": "pf2e",
+
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+
+      "flags": {}
+    },
+
+    {
+      "name": "baleborne-main-module-journals",
+      "label": "Baleborne Main Module Journals",
+      "path": "packs/baleborne-main-module-journals",
+      "type": "JournalEntry",
+      "system": "pf2e",
+
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+
+      "flags": {}
+    }
+  ],
+
+  "description": ""
+}

@@ -1,0 +1,713 @@
+	/* This is the Hunger bar's size (the width of the bar) */
+
+	.baleborne-hunger {
+		margin: 0.35rem 0 0.45rem;
+		padding: 0 0.25rem;
+	}
+
+
+	/* This is what let's you modify the "Hunger" label's space it takes up left to right as well as how it's aligned (left, right or center)
+	in comparison to the hunger bar*/
+
+	.baleborne-hunger-header {
+		margin: 0 0 0.15rem;
+		text-align: center;
+	}
+
+	.baleborne-hunger-header h2 {
+		margin: 0;
+		padding: 0;
+
+		font-size: 0.85rem;
+		line-height: 1.1;
+	}
+
+
+	/* This is modifies the appearance of the current and maximum numbers above the hunnger bar. */
+
+	.baleborne-hunger-numbers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		gap: 0.15rem;
+
+		height: 1.3rem;
+	}
+
+
+	/* This edits the appearance of the edititable number for the hunger bar. */
+
+	.baleborne-hunger-current {
+		width: 2rem;
+		height: 1.2rem;
+
+		padding: 0;
+
+		border: none;
+		background: transparent;
+
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+
+	/* Highlight the editable number when clicked */
+
+	.baleborne-hunger-current:focus {
+		outline: 1px solid var(--color-warm-2);
+		background: rgba(255, 255, 255, 0.08);
+	}
+
+
+	/* Makes it to where the editable number for Hunger is text (aka actually editable)*/
+
+	.baleborne-hunger-current {
+		appearance: textfield;
+	}
+
+
+	/* Divider and the hunger maxiumumn number size (height and font size) */
+
+	.baleborne-hunger-divider,
+	.baleborne-hunger-max {
+		font-size: 0.9rem;
+		line-height: 1;
+	}
+
+
+	/* Hunger bar's background appearance: size and color */
+
+	.baleborne-hunger-bar {
+		position: relative;
+
+		width: 70%;
+		height: 0.3rem;
+
+		margin: 0.1rem auto 0;
+
+		overflow: hidden;
+
+		border-radius: 2px;
+
+		background: rgba(0, 0, 0, 0.25);
+	}
+
+
+	/* What the hunger bar looks like as it fills up */
+
+	.baleborne-hunger-fill {
+		height: 100%;
+
+		background: #d8c06a;
+
+		transition: width 0.15s ease;
+	}
+
+
+	/*   Baleborne Damage Type Symbols & Highlight */
+
+
+	/* Corruption Damage */
+
+	span.damage.instance.corruption.color {
+		color: #3f3548;
+
+		background: rgba(105, 54, 159, 0.19);
+
+		border-radius: 3px;
+
+		/* Makes the colored highlight spread farther */
+		padding-left: 0.33rem;
+		padding-right: 0.33rem;
+
+		box-shadow:
+			inset 0 0 0 1px rgba(67, 53, 80, 0.15);
+	}
+
+	span.damage.instance.corruption::after {
+		content: "✦";
+
+		/* This is how you pull the symbol closer to the die number (negative number is closer, positive is further away) */
+		margin-left: -1.00rem;
+
+		/* Changes the symbol size (one on the damage indicator) */
+		font-size: 1.25em;
+		line-height: 1;
+
+		color: #342b3d;
+
+		text-shadow:
+			0 0 2px rgba(160, 140, 180, 0.50);
+	}
+
+
+	/* Purity Damage */
+
+	span.damage.instance.purity.color {
+		color: #355563;
+
+		background: rgba(145, 190, 208, 0.28);
+
+		border-radius: 3px;
+
+		/* Makes the colored highlight spread farther */
+		padding-left: 0.33rem;
+		padding-right: 0.33rem;
+
+		box-shadow:
+			inset 0 0 0 1px rgba(105, 155, 175, 0.38);
+	}
+
+	span.damage.instance.purity::after {
+		content: "✧";
+
+		/* This is how you pull the symbol closer to the die number (negative number is closer, positive is further away) */
+		margin-left: -1.00rem;
+
+		/* Changes symbol size */
+		font-size: 1.25em;
+		line-height: 1;
+
+		color: #2f5868;
+
+		text-shadow:
+			0 0 2px rgba(235, 250, 255, 0.95);
+	}
+
+	/*  Baleborne Dogma Stuff for Player Character Sheet */
+
+	.character .abcd .baleborne-dogma-slot {
+		cursor: default;
+	}
+
+
+	/* Dogma Feats section appearance */
+
+	.baleborne-dogma-level-input {
+		width: 2.5rem;
+		text-align: center;
+	}
+
+	.baleborne-dogma-feats-list {
+		min-height: 2rem;
+	}
+
+	/* PC Dogma Meter size */
+
+	.baleborne-pc-dogma-meter {
+		grid-column: 1 / -1;
+
+		margin: 0.15rem 0 0.35rem;
+		padding: 0 0.25rem;
+	}
+
+
+	/* Meter Header placing (this is what moves where "corruption" or "purity" is located above the Dogma Meter */
+
+	.baleborne-dogma-meter-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		margin-bottom: 0.15rem;
+	}
+
+
+	/* Dogma Meter Label (This is the actual label's size, color, etc) */
+
+	.baleborne-dogma-meter-label {
+		font-size: 0.75rem;
+		font-weight: 600;
+
+		color: inherit;
+		font-family: inherit;
+	}
+
+
+	/* Current / Maximum (for dogma meter not hunger meter*/
+
+	.baleborne-dogma-meter-numbers {
+		display: flex;
+		align-items: center;
+
+		gap: 0.15rem;
+
+		font-size: 0.75rem;
+	}
+
+
+	/* Current Dogma level editable field appearance and location (this is the number you can manually edit on the dogma meter) */
+
+	.baleborne-dogma-meter-current {
+		width: 2rem;
+		height: 1.15rem;
+
+		padding: 0;
+
+		border: none;
+		background: transparent;
+
+		text-align: right;
+		font-size: 0.75rem;
+		font-weight: 600;
+	}
+
+
+	/* Meter Tracker's position and apperance*/
+
+	.baleborne-dogma-meter-bar {
+		position: relative;
+
+		width: 100%;
+		height: 0.4rem;
+
+		overflow: hidden;
+
+		border-radius: 3px;
+
+		background: rgba(0, 0, 0, 0.25);
+	}
+
+
+	/*Dogma Meter's appearance as it is filled up*/
+
+	.baleborne-dogma-meter-fill {
+		height: 100%;
+
+		transition:
+			width 0.15s ease,
+			background 0.15s ease;
+	}
+
+
+	/* Threshold Marker's location and apperance */
+
+	.baleborne-dogma-meter-threshold {
+		position: absolute;
+
+		top: -1px;
+		bottom: -1px;
+
+		width: 2px;
+
+		background: rgba(255, 255, 255, 0.95);
+
+		z-index: 2;
+
+		pointer-events: none;
+	}
+
+
+	/* Effects what the dogma bar fill color like when no Dogma has been selected */
+
+	.baleborne-dogma-meter-neutral
+	.baleborne-dogma-meter-fill {
+		background: #777;
+	}
+
+
+	/* Effects what the dogma bar fill color looks like when corruption dogma is selected */
+
+	.baleborne-dogma-meter-corruption
+	.baleborne-dogma-meter-fill {
+		background: #8150aa;
+	}
+
+	/* Effects what the dogma bar fill color looks like when purity dogma is selected*/
+
+	.baleborne-dogma-meter-pure
+	.baleborne-dogma-meter-fill {
+		background: #91bed0;
+	}
+
+/*NPC Dogma Category Section */
+
+
+/* This part makes sure that the dogma category is divided into 2 columns */
+
+.baleborne-npc-dogma-content {
+	display: grid;
+
+	grid-template-columns:
+		minmax(0, 1fr)
+		minmax(0, 1fr);
+
+	align-items: start;
+
+	column-gap: 0.75rem;
+
+	padding: 0.5rem;
+}
+
+
+/* This controls the "Dogma" header */
+
+.baleborne-npc-dogma-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 0.35rem;
+}
+
+
+/* This controls the location and size of the Level label*/
+
+.baleborne-npc-dogma-level {
+	display: flex;
+	align-items: center;
+
+	gap: 0.35rem;
+}
+
+
+/* This affects the size and position of the level number and makes it editable*/
+
+.baleborne-npc-dogma-level-input {
+	width: 2rem;
+	height: 1.35rem;
+
+	padding: 0;
+
+	text-align: center;
+
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+
+/* This controls the shape and size of the Left column */
+
+.baleborne-npc-dogma-left {
+	display: grid;
+
+	grid-template-rows:
+		auto
+		auto;
+
+	row-gap: 0.35rem;
+
+	min-width: 0;
+}
+
+
+/* Controls the way the Dogma type selection looks */
+
+.baleborne-npc-dogma-slot {
+	display: flex;
+	align-items: center;
+
+	min-width: 0;
+	min-height: 1.95rem;
+
+	padding: 0.35rem 0.55rem;
+
+	border: 1px solid
+		var(--color-border-light-2);
+
+	border-radius: 3px;
+
+	box-sizing: border-box;
+}
+
+
+/* Controls the postion and size of the selected Dogma type so that it stays in the box */
+
+.baleborne-npc-dogma-name {
+	flex: 1;
+
+	min-width: 0;
+
+	padding-left: 0.15rem;
+	padding-right: 0.6rem;
+
+	font-weight: 600;
+}
+
+
+/* effects the appearance of the search icon in the Dogma type box*/
+
+.baleborne-npc-dogma-search {
+	flex: 0 0 auto;
+
+	margin-left: 0.25rem;
+}
+
+
+/*Effects the location and size of the Dogma Meter */
+
+.baleborne-npc-dogma-meter {
+	width: 100%;
+	min-width: 0;
+
+	padding: 0.25rem 0.35rem;
+
+	border: 1px solid
+		var(--color-border-light-2);
+
+	border-radius: 3px;
+
+	box-sizing: border-box;
+}
+
+
+/* Meter title and current / maximum values */
+
+.baleborne-npc-dogma-meter-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 0.35rem;
+
+	margin-bottom: 0.2rem;
+}
+
+
+/* Purity Meter / Corruption Meter label */
+
+.baleborne-npc-dogma-meter-label {
+	min-width: 0;
+
+	font-size: 0.72rem;
+	font-weight: 600;
+
+	white-space: nowrap;
+}
+
+
+/* Current / maximum number area */
+
+.baleborne-npc-dogma-meter-numbers {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	gap: 0.1rem;
+
+	font-size: 0.72rem;
+
+	white-space: nowrap;
+}
+
+
+/* Editable current Dogma Meter value */
+
+.baleborne-npc-dogma-meter-current {
+	width: 2rem;
+	height: 1rem;
+
+	padding: 0;
+
+	border: none;
+
+	background: transparent;
+
+	text-align: right;
+
+	font-size: 0.72rem;
+	font-weight: 600;
+}
+
+
+/* Removes Foundry focus styling from meter input */
+
+.baleborne-npc-dogma-meter-current:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+
+/* Maximum Dogma Meter value */
+
+.baleborne-npc-dogma-meter-max {
+	min-width: 1rem;
+
+	text-align: left;
+
+	font-size: 0.72rem;
+}
+
+
+/* Empty meter track */
+
+.baleborne-npc-dogma-meter-track {
+	position: relative;
+
+	width: 100%;
+	height: 0.45rem;
+
+	overflow: hidden;
+
+	border: 1px solid
+		var(--color-border-light-2);
+
+	border-radius: 2px;
+
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Filled portion of meter */
+
+.baleborne-npc-dogma-meter-fill {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	width: 0;
+}
+
+
+/* Corruption Meter color */
+
+.baleborne-npc-dogma-meter-corruption
+.baleborne-npc-dogma-meter-fill {
+	background: #8150aa;
+}
+
+
+/* Purity Meter color */
+
+.baleborne-npc-dogma-meter-pure
+.baleborne-npc-dogma-meter-fill {
+	background: #91bed0;
+}
+
+
+/* Dogma Meter threshold line */
+
+.baleborne-npc-dogma-meter-threshold {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+
+	width: 2px;
+
+	background: white;
+
+	transform: translateX(-1px);
+
+	pointer-events: none;
+}
+
+
+/* This control the right column and it's size */
+
+.baleborne-npc-dogma-right {
+	display: grid;
+
+	grid-template-rows:
+		auto
+		auto;
+
+	row-gap: 0.35rem;
+
+	min-width: 0;
+}
+
+
+/* This part effects the Dogma Attack and DC's postion and appearances */
+
+.baleborne-npc-dogma-stat-row {
+	display: grid;
+
+	grid-template-columns:
+		minmax(0, 1fr)
+		3.5rem
+		2.5rem;
+
+	align-items: center;
+
+	min-height: 1.95rem;
+
+	column-gap: 0.35rem;
+
+	font-size: 0.72rem;
+}
+
+
+/* This controls the Dogma Attack / Dogma DC name area */
+
+.baleborne-npc-dogma-stat-name {
+	display: flex;
+	align-items: center;
+
+	gap: 0.3rem;
+
+	min-width: 0;
+
+	font-size: 0.72rem;
+	font-weight: 600;
+
+	white-space: nowrap;
+}
+
+
+/* This controls the Dogma Attack and Dogma DC numbers */
+
+.baleborne-npc-dogma-value {
+	text-align: right;
+
+	font-size: 0.8rem;
+	font-weight: 700;
+
+	white-space: nowrap;
+}
+
+
+/* This controls the rollable Dogma Attack number */
+
+a.baleborne-npc-dogma-value {
+	cursor: pointer;
+}
+
+
+/* This controls where the Dogma proficiency rank appears*/
+
+.baleborne-npc-dogma-rank {
+	text-align: center;
+
+	font-size: 0.65rem;
+
+	opacity: 0.75;
+
+	white-space: nowrap;
+}
+
+
+/* This controls the appearance of the rollable d20 */
+/* ------------------------------------------------------------ */
+
+.baleborne-npc-dogma-stat-row .d20 {
+	flex: 0 0 auto;
+
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+
+.baleborne-npc-dogma-stat-row .d20-svg {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+
+.baleborne-npc-dogma-stat-row .d20-svg svg {
+	display: block;
+
+	width: 100%;
+	height: 100%;
+}
+
+.baleborne-npc-dogma-d20-space {
+	flex: 0 0 0.9rem;
+
+	width: 0.9rem;
+	height: 0.9rem;
+}
