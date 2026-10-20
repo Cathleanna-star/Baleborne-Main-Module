@@ -3,5 +3,8 @@
 
   "BALEBORNE.FeatCategory.DogmaFeature": "Dogma Feature",
   "BALEBORNE.FeatCategory.DogmaFeat": "Dogma Feat",
-  "PF2E.RuleElement.GrantEffect":"Grant Effect"
+  "PF2E.RuleElement.GrantEffect":"Grant Effect",
+  "PF2E.RuleElement.Affliction": "Affliction Rule",
+  "PF2E.RuleElement.AfflictionAlteration": "Affliction Alteration",
+  "PF2E.RuleElement.AfflictionVariant": "Affliction Variant"
 }

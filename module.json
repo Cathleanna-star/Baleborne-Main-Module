@@ -4,7 +4,7 @@
   "version": "1.0.1",
   
   "manifest":"https://github.com/Cathleanna-star/Baleborne-Main-Module/releases/latest/download/baleborne-main-module.json",
-  "download":"https://github.com/Cathleanna-star/Baleborne-Main-Module/releases/download/1.0.1/baleborne-main-module.zip",
+  "download":"https://github.com/Cathleanna-star/Baleborne-Main-Module/releases/download/1.2.0/baleborne-main-module.zip",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -56,12 +56,19 @@
 			"yatash":"Yatash"
 		},
 		
+		"baseWeapons":{
+			"tessen":"Tessen"
+		},
+		
         "creatureTraits": {
           "corrupt": "Corrupt",
           "pure": "Pure",
           "betwixt": "Betwixt",
 		  "dogma":"Dogma",
-		  "oni":"Oni"
+		  "oni":"Oni",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "featTraits": {
@@ -73,33 +80,48 @@
 		  "decadence":"Decadence",
 		  "distortion":"Distortion",
 		  "temerpance":"Temperance",
-		  "vow":"Vow"
+		  "vow":"Vow",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "spellTraits": {
           "corrupt": "Corrupt",
           "pure": "Pure",
           "betwixt": "Betwixt",
-		  "dogma":"Dogma"
+		  "dogma":"Dogma",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "weaponTraits": {
           "corrupt": "Corrupt",
           "pure": "Pure",
           "betwixt": "Betwixt",
-		  "oni":"Oni"
+		  "oni":"Oni",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "equipmentTraits": {
           "corrupt": "Corrupt",
           "pure": "Pure",
-          "betwixt": "Betwixt"
+          "betwixt": "Betwixt",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "shieldTraits": {
           "corrupt": "Corrupt",
           "pure": "Pure",
-          "betwixt": "Betwixt"
+          "betwixt": "Betwixt",
+		  "tatsuwa":"Tatsuwa",
+		  "yatagarasu":"Yatagarasu",
+		  "jorogumo":"Jorogumo"
         },
 
         "damageTypes": {
